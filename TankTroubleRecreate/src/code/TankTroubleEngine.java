@@ -456,11 +456,15 @@ public class TankTroubleEngine extends AnimationPanel {
         //General Text (Draw this last to make sure it's on top.)
         g.setColor(Color.BLACK);
 
-        g.drawString("Frame Number: " + frameNumber, 800, 40);
+        g.drawString("Controls: ", 800, 60);
+        g.drawString("Blue: WASD + Space",800,80);
+        g.drawString("Red: Arrow Keys + Period",800,100);
+        g.drawString("Frame Number: " + frameNumber, 800, 160);
+
         if (f3Pressed){
-            g.drawString("Hitboxes Shown (F3)", 800, 80);
+            g.drawString("Hitboxes Shown (F3)", 800, 200);
         } else {
-            g.drawString("Hitboxes Not Shown (F3)", 800, 80);
+            g.drawString("Hitboxes Not Shown (F3)", 800, 200);
         }
         g.setFont(new Font(g.getFont().getFontName(),Font.BOLD, 20));
         g.drawString("TroubledTanks 2021", 780, 24);
